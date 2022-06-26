@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 !important;
+}
+.header-info {
+  background-color: #27272e;
+  height: 27px;
+  text-align: right;
+}
+
+.header-info u {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 15px;
+  opacity: 0.85;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav ul li:first-child{
+  width: 45%;
+  height: 65px;
+}
+
+.topnav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin-right: 50px; */
+}
+
+.topnav ul li {
+  list-style-type: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: #231f20;
+  opacity: 0.8;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.topnav ul li:last-child {
+  border: 1px solid #0c7d9f;
+  border-radius: 4px;
+  color: #0c7d9f;
+  line-height: 8px;
+  margin-left: 15px;
+}
+
+.form-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #27272e;
+  position: relative;
+}
+
+.form-section img {
+  width: 50%;
+  height: 200%;
+}
+
+.form-section .form-data {
+  margin-left: 0 !important;
+  width: 50%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(0, -40%);
+
+  /* justify-content: center; */
+}
+
+.form-section .form-data div {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-section div h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 38px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.form-section .form-data div input,
+.form-section div select,
+.form-section div select option,
+.form-section div button {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  transform: matrix(1, 0, 0.01, 1, 0, 0);
+  width: 45%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  margin-block: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-section div select {
+  width: 90%;
+  height: 35px;
+}
+
+.form-section div select option {
+  background: rgb(61, 61, 61);
+}
+
+.form-section div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: #0c7d9f;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  transform: rotate(-0.33deg);
+  color: #ffffff;
+  margin: auto;
+}
+
+.form-section div button img {
+  padding: 5px;
+  height: 18px;
+  width: 25px;
+}
+
+.form-section .submit {
+  margin: 50px auto;
+  margin-block: 15px;
+}
+
+.about-team-heading {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #231f20;
+  margin: 30px;
+}
+
+.about-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-team div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 100px;
+}
+
+.about-team div:nth-child(2) {
+  padding-inline: 50px;
+  border-left: 1px solid #586877;
+  border-right: 1px solid #586877;
+}
+
+.about-team h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #231f20;
+  margin-top: 30px;
+}
+
+.about-team p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: justify;
+  color: #231f20;
+  margin-block: 10px;
+}
+
+.about-team a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #231f20;
+  cursor: pointer;
+}
+
+.partner-teams-section {
+  background-color: #ecf2f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.partner-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.partner-teams-heading {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #231f20;
+  margin-block: 50px;
+}
+
+.partner-teams div {
+  background: #ffffff;
+  height: 80px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.partner-teams-section .dots {
+  display: flex;
+}
+
+.partner-teams-section .dots div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid #808080;
+  margin: 30px 5px;
+  cursor: pointer;
+}
+
+.partner-teams-section .dots div:first-child {
+  background-color: #808080;
+}
+
+.scope-section-heading {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #231f20;
+  margin: 35px;
+}
+
+.scope-section,
+.scope-section1 {
+  background: rgba(255, 255, 255, 0.75);
+  height: 30vh;
+}
+
+.scope-section h1,
+.scope-section1 h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #231f20;
+}
+
+.scope-section p,
+.scope-section1 p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #231f20;
+}
+
+.scope-section1 {
+  background: #0c7d9f;
+}
+
+.scope-section1 p {
+  color: #ffffff;
+}
+
+.scope-section1 h1 {
+  color: #ffffff;
+}
+
+.scope-web {
+  position: relative;
+  display: flex;
+}
+
+.img-section img {
+  height: 60vh;
+}
+
+.img-video-icon {
+  width: 200px;
+  height: 200px !important;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+}
+
+.img-container h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.img-container p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.scope-section p span,
+.scope-section1 p span,
+.img-container p span {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #231f20;
+}
+
+.scope-section1 p span {
+  border-bottom: 1px solid #ffffff;
+}
+
+.img-container p span {
+  border-bottom: 1px solid #ffffff;
+}
+
+.scope-section,
+.scope-section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scope-section p,
+.scope-section h1,
+.scope-section1 p,
+.scope-section1 h1 {
+  margin-left: 40px;
+}
+
+footer {
+  background-color: #27272e;
+  transform: translateY(-5px);
+  padding-block: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer div {
+  min-width: 200px;
+}
+
+footer ul li {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-block: 10px;
+  opacity: 0.85;
+}
+
+footer ul li:first-child {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .topnav img {
+    float: left;
+  }
+  .topnav ul li {
+    display: none;
+  }
+  .topnav ul li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .topnav ul li {
+    margin-inline: 0;
+  }
+
+  .topnav ul{
+    margin-right: 0;
+  }
+
+  .topnav img {
+    padding: 0;
+  }
+
+  .topnav {
+    position: relative;
+    /* background-color:#808080; */
+  }
+  .topnav.responsive ul li .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav.responsive ul li:first-child {
+    padding-bottom: 1rem;
+  }
+
+  .topnav.responsive ul li:nth-child(2) {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    background: transparent;
+  }
+
+  .topnav.responsive ul li {
+    display: block;
+    background:#9d9c9c;
+    padding: 1rem !important;
+    color: black;
+    width: 100%;
+  }
+
+  .topnav ul li:last-child {
+    margin-left: 0;
+  }
+
+  .topnav ul {
+    justify-content: left;
+    /* margin-right: 50px; */
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .form-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-section div h1,
+  .about-team-heading,
+  .partner-teams-heading,
+  .scope-section-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .form-section img {
+    width: 100%;
+  }
+
+  .form-section .form-data {
+    width: 100%;
+    position: relative;
+    left: 0%;
+    top: 2%;
+    transform: translate(0, 0%);
+    margin-block: 20px;
+  }
+
+  .about-team div {
+    margin: 20px 10px;
+  }
+
+  .about-team div:nth-child(2) {
+    padding-inline: 30px;
+  }
+
+  .partner-teams {
+    flex-wrap: wrap;
+  }
+
+  .partner-teams div {
+    min-width: 250px;
+  }
+
+  .scope-web {
+    flex-direction: column;
+  }
+
+  .img-section {
+    position: relative;
+  }
+
+  .img-section img {
+    width: 100%;
+  }
+
+  .img-video-icon {
+    width: 200px !important;
+    height: 200px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-container {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+  }
+
+  .scope-section h1, .scope-section1 h1 {
+    font-size: 30px;
+  }
+
+  .scope-section p, .scope-section h1, .scope-section1 p, .scope-section1 h1 {
+    margin-left: 15px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .about-team {
+    flex-direction: column;
+  }
+
+  .about-team div:nth-child(2) {
+    padding-block: 50px;
+    border-top: 1px solid #586877;
+    border-bottom: 1px solid #586877;
+    border-left: 0px solid #586877;
+    border-right: 0px solid #586877;
+  }
+
+  .scope-web h1{
+    font-size: 26px;    
+  }
+
+  .scope-web p{
+    font-size: 19px;    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-data div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-section .form-data div input {
+    width: 100%;
+  }
+
+  .form-section div h1,
+  .about-team-heading,
+  .partner-teams-heading,
+  .scope-section-heading {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .form-section div select {
+    width: 96%;
+  }
+}
