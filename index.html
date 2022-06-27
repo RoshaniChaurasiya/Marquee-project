@@ -11,17 +11,25 @@
 </head>
 <script>
     function handleNav() {
-        var x = document.getElementById("nav-bar");
+        let x = document.getElementById("nav-bar");
+        let imgClass=document.getElementsByClassName("hambergar-logo-img")[0];
         if (x.className === "topnav") {
             x.className += " responsive";
+            imgClass.style.display="none";
         } else {
             x.className = "topnav";
+            imgClass.style.display="block";
         }
+    }
+
+    function scrollToView(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView();
     }
 </script>
 
 <body>
-    <header>
+    <header class="sticky">
         <section class="header-info">
             <u>+91 98765 43210</u>
             <u>info@marqueesolution.com</u>
@@ -30,18 +38,19 @@
             <ul>
                 <li><img src="./assets/Marquee Solution Logo.png" alt="Solution logo" /></li>
                 <li>
-                    <li class="icon"><i class="fa fa-bars" onclick="handleNav()"></i></li>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
+                <li class="icon"><i class="fa fa-bars" onclick="handleNav()"></i></li>
+                <li onclick="scrollToView('home')">Home</li>
+                <li onclick="scrollToView('services')">Services</li>
+                <li onclick="scrollToView('about-us')">About Us</li>
+                <li onclick="scrollToView('careers')">Careers</li>
+                <li onclick="scrollToView('contact-us')">Contact Us</li>
                 </li>
             </ul>
+            <img class="hambergar-logo-img" src="./assets/Marquee Solution Logo.png" alt="Solution logo" />
         </section>
     </header>
     <main>
-        <section class="form-section">
+        <section id="home" class="form-section">
             <img src="./assets/image 61.png" alt="Hero BG.png" />
             <div class="form-data">
                 <h1>Your requirement, our commitment.</h1>
@@ -63,7 +72,7 @@
                     <label>Submit</label></button>
             </div>
         </section>
-        <section>
+        <section id="services">
             <h1 class="about-team-heading">Our Client-Focused approach</h1>
             <div class="about-team">
                 <div><img src="./assets/Grow-icon.png" alt="Grow-icon.png" />
@@ -86,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="partner-teams-section">
+        <section id="about-us" class="partner-teams-section">
             <h1 class="partner-teams-heading">Our collaboration partners</h1>
             <div class="partner-teams">
                 <div><img src="./assets/Untitled1.png" alt="Untitled1.png"></div>
@@ -101,7 +110,7 @@
                 <div> </div>
             </div>
         </section>
-        <section>
+        <section id="careers">
             <h1 class="scope-section-heading">Understanding the Future SCOPe OF WEB</h1>
             <div class="scope-web">
                 <div class="img-section">
@@ -125,7 +134,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact-us">
         <div> <img src="./assets/Marquee-Solution-Vertical-Logo 1.png" alt="Solution logo" /> </div>
         <div>
             <ul>
