@@ -22,10 +22,17 @@ body {
   opacity: 0.85;
 }
 
+.hambergar-logo-img{
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
+}
+
 .topnav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .topnav ul li:first-child{
@@ -84,7 +91,7 @@ body {
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 42%;
+  top: 53%;
   transform: translate(0, -40%);
 
   /* justify-content: center; */
@@ -630,4 +637,12 @@ footer ul li:first-child {
   .form-section div select {
     width: 96%;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
