@@ -22,12 +22,6 @@ body {
   opacity: 0.85;
 }
 
-.hambergar-logo-img{
-  margin-right: 20px;
-  width: 100px;
-  height: 30px;
-}
-
 .topnav {
   display: flex;
   align-items: center;
