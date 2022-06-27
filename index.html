@@ -12,13 +12,10 @@
 <script>
     function handleNav() {
         let x = document.getElementById("nav-bar");
-        let imgClass=document.getElementsByClassName("hambergar-logo-img")[0];
         if (x.className === "topnav") {
             x.className += " responsive";
-            imgClass.style.display="none";
         } else {
             x.className = "topnav";
-            imgClass.style.display="block";
         }
     }
 
@@ -46,7 +43,6 @@
                 <li onclick="scrollToView('contact-us')">Contact Us</li>
                 </li>
             </ul>
-            <img class="hambergar-logo-img" src="./assets/Marquee Solution Logo.png" alt="Solution logo" />
         </section>
     </header>
     <main>
